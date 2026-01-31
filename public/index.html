@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Web bán linh kiện</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <a href="index.html">🖥️ PC STORE</a>
+  </div>
+
+  <nav class="navbar">
+    <a href="#" data-category="ALL">Tất cả</a>
+    <a href="#" data-category="CPU">CPU</a>
+    <a href="#" data-category="RAM">RAM</a>
+    <a href="#" data-category="SSD">SSD</a>
+    <a href="#" data-category="VGA">VGA</a>
+    <a href="#" data-category="Main">Mainboard</a>
+  </nav>
+
+  <div class="header-right">
+    <input type="text" placeholder="🔍 Tìm sản phẩm..." id="search-input">
+
+    <!-- USER AREA -->
+    <span id="user-area"></span>
+
+    <a href="cart.html" class="cart-link">
+      🛒
+      <span id="cart-count">0</span>
+    </a>
+  </div>
+</header>
+
+<!-- DANH SÁCH SẢN PHẨM -->
+<div id="product-list" class="product-list"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

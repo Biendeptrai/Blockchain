@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thanh toán</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="checkout-page">
+
+  <h1>💳 Thanh toán</h1>
+  <a href="cart.html" class="back-link">← Quay lại giỏ hàng</a>
+
+  <div class="checkout-container">
+
+    <!-- FORM KHÁCH HÀNG -->
+    <div class="checkout-form">
+      <h2>Thông tin khách hàng</h2>
+
+      <form id="checkout-form">
+        <input type="text" id="name" placeholder="Họ và tên" required>
+        <input type="text" id="phone" placeholder="Số điện thoại" required>
+        <textarea id="address" placeholder="Địa chỉ giao hàng" required></textarea>
+
+        <button type="submit" class="order-btn">✔ Đặt hàng</button>
+      </form>
+    </div>
+
+    <!-- TÓM TẮT ĐƠN -->
+    <div class="checkout-summary">
+  <h2>Đơn hàng của bạn</h2>
+
+  <div id="order-items" class="order-items"></div>
+
+  <hr>
+
+  <p id="total" class="total-price"></p>
+</div>
+
+<script src="js/checkout.js"></script>
+</body>
+
+</html>
