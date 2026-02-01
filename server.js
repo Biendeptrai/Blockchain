@@ -1,9 +1,13 @@
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const orderRoutes = require("./routes/order.routes");
 const authRoutes = require("./routes/auth.routes"); 
 const app = express();
+
+require("./config/db");
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static("public"));

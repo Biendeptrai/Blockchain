@@ -1,16 +1,19 @@
-const mysql = require("mysql2");
+const mysql = require("mysql");
+
+console.log("🔄 Đang kết nối MySQL...");
 
 const db = mysql.createConnection({
-  host: "localhost",
+  host: "127.0.0.1",
   user: "root",
-  password: "",       // XAMPP mặc định KHÔNG có mật khẩu
-  database: "linhkien"
+  password: "",
+  database: "linhkien",
+  port: 3306
 });
 
 db.connect(err => {
   if (err) {
-    console.log("❌ Không kết nối được MySQL");
-    console.log(err.message);
+    console.error("❌ Không kết nối được MySQL");
+    console.error(err.message);
     return;
   }
   console.log("✅ Kết nối MySQL thành công");
